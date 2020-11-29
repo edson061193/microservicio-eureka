@@ -1,0 +1,51 @@
+
+#get all socio
+curl -X GET \
+  http://localhost:8080/socios \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+
+#get socio by ID
+curl -X GET \
+  http://localhost:8080/socio/-162793925 \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+
+
+#update socio by ID
+curl -X PUT \
+  http://localhost:8080/socio/-162793925 \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -d '{
+    "id":"-162793925",
+    "dni": "73483995",
+    "apaterno": "suarez",
+    "amaterno": "loli",
+    "nombres": "edson jordhinio",
+    "correo": "edson061193@gmail.com",
+    "telefono": "922193911",
+    "estado": "1",
+    "menbresia": "gold"
+}'
+
+#delete socio by ID
+
+
+#create socio
+curl -X POST \
+  http://localhost:8080/socio \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 26f3241e-4e02-ef8b-701d-954f52797ee1' \
+  -d '{
+	"id":"0",
+	"dni": "73483933",
+	"apaterno":"peña",
+	"amaterno":"de la cruz",
+	"nombres":"jennifer",
+	"correo":"jennifer@gmail.com",
+	"telefono":"922193911",
+	"estado":"1",
+	"menbresia":"gold"
+}'
