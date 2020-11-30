@@ -11,7 +11,7 @@
     <groupId>com.edsonsuarez</groupId>
     <artifactId>apirest-mongodb</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Cinema - Services MongoDb</name>
+    <name>Cineplaneta - Services MongoDb</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

@@ -54,6 +54,11 @@ public class SocioController {
         return "{ \"operacionExitosa\" : "+ (result ? "true" : "false") +" }";
     }
 
+    @GetMapping("/buscar-dni/{dni}")
+    boolean buscarSocio(@PathVariable String dni){
+        return socioRepository.existsByDni(dni);
+    }
+
     @PostMapping("/registrar")
     public Object addSocio(@RequestBody SocioDto socio){
         String id = String.valueOf(new Random().nextInt() & Integer.MAX_VALUE);

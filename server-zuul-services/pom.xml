@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.edsonsuarez</groupId>
-    <artifactId>server-zuul</artifactId>
+    <artifactId>services-eureka-zuul</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Cinema - Api Gateway</name>
+    <name>Cineplaneta - Api Gateway</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
